@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-12">
+            <div class="card">
+                <div class="card-body" *ngIf="encontrado">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" *ngFor="let item of listSearch">
+                            <h2 style="margin-left: 15px;">{{item.titulo}}</h2>
+                            <p><button type="button" class="btn btn-link" (click)="openToLink(item.link)">{{item.link}}</button></p>
+                            <p style="margin-left: 15px;">{{item.descricao}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body" *ngIf="!encontrado">
+                    <h3>Pesquisa não encontrada.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

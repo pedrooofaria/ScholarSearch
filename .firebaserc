@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "scholar-search-8338c": {
+      "hosting": {
+        "scholar_search": [
+          "scholar-search-8338c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "scholar-search-8338c"
+  }
+}
